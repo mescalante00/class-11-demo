@@ -22,4 +22,25 @@ export const typeDefs = gql`
     meal(id: ID!): Meal
     categories: [Category]
   }
+  type Error {
+    message: String!
+  }
+
+  type Result {
+    ok: Boolean!
+    errors: [Error]
+  }
+  # Special types start
+  input MealInput {
+    title: String!
+    description: String!
+    imgsrc: String
+    price: Float!
+    categoryId: ID!
+  }
+
+  type Mutation {
+    addMeal(input: MealInput!): Result
+    updateMeal(id: ID!, input: MealInput): Result
+  }
 `;
