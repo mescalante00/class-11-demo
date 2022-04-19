@@ -11,6 +11,24 @@ export const typeDefs = gql`
     category: Category
   }
 
+  type Book {
+    id: ID!
+    author: String!
+    country: String!
+    imageLink: String
+    language: String!
+    link: String
+    pages: Float!
+    title: String!
+    year: Float!
+  }
+
+  type BookShelf {
+    id: ID!
+    title: String!
+    books: [Book]
+  }
+
   type Category {
     id: ID!
     title: String!
@@ -19,7 +37,9 @@ export const typeDefs = gql`
 
   type Query {
     meals: [Meal]
+    books: [Book]
     meal(id: ID!): Meal
+    book(id: ID!): Book
     categories: [Category]
   }
   type Error {
@@ -39,8 +59,19 @@ export const typeDefs = gql`
     categoryId: ID!
   }
 
+  input BookInput {
+    author: String!
+    country: String!
+    language: String!
+    pages: Float!
+    title: String!
+    year: Float!
+  }
+
   type Mutation {
     addMeal(input: MealInput!): Result
+    addBook(input: BookInput!): Result
+    updateBook(id: ID!, input: BookInput): Result
     updateMeal(id: ID!, input: MealInput): Result
   }
 `;
