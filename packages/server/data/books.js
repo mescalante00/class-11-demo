@@ -1,7 +1,7 @@
 export const books = [
   {
     id: 1,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -11,7 +11,7 @@ export const books = [
   },
   {
     id: 2,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -21,7 +21,7 @@ export const books = [
   },
   {
     id: 3,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -31,7 +31,7 @@ export const books = [
   },
   {
     id: 4,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -41,7 +41,7 @@ export const books = [
   },
   {
     id: 5,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -51,7 +51,7 @@ export const books = [
   },
   {
     id: 6,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -61,7 +61,7 @@ export const books = [
   },
   {
     id: 7,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -71,7 +71,7 @@ export const books = [
   },
   {
     id: 8,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -81,7 +81,7 @@ export const books = [
   },
   {
     id: 9,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -91,7 +91,7 @@ export const books = [
   },
   {
     id: 10,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -101,7 +101,7 @@ export const books = [
   },
   {
     id: 11,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -111,7 +111,7 @@ export const books = [
   },
   {
     id: 12,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -121,7 +121,7 @@ export const books = [
   },
   {
     id: 13,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -131,7 +131,7 @@ export const books = [
   },
   {
     id: 14,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -141,7 +141,7 @@ export const books = [
   },
   {
     id: 15,
-    title: "Into Thin Air",
+    title: "The Kite Runner",
     categoryId: 1,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -151,7 +151,7 @@ export const books = [
   },
   {
     id: 16,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -161,7 +161,7 @@ export const books = [
   },
   {
     id: 17,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -171,7 +171,7 @@ export const books = [
   },
   {
     id: 18,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -181,7 +181,7 @@ export const books = [
   },
   {
     id: 19,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -191,7 +191,7 @@ export const books = [
   },
   {
     id: 20,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -201,7 +201,7 @@ export const books = [
   },
   {
     id: 21,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -211,7 +211,7 @@ export const books = [
   },
   {
     id: 22,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -221,7 +221,7 @@ export const books = [
   },
   {
     id: 23,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -231,7 +231,7 @@ export const books = [
   },
   {
     id: 24,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -241,7 +241,7 @@ export const books = [
   },
   {
     id: 25,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -251,7 +251,7 @@ export const books = [
   },
   {
     id: 26,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -261,7 +261,7 @@ export const books = [
   },
   {
     id: 27,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -271,7 +271,7 @@ export const books = [
   },
   {
     id: 28,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -281,7 +281,7 @@ export const books = [
   },
   {
     id: 29,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -291,7 +291,7 @@ export const books = [
   },
   {
     id: 30,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -301,7 +301,7 @@ export const books = [
   },
   {
     id: 31,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -311,7 +311,7 @@ export const books = [
   },
   {
     id: 32,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",
@@ -321,7 +321,7 @@ export const books = [
   },
   {
     id: 33,
-    title: "The Boy Who Cried Wolf",
+    title: "The old man and the sea",
     categoryId: 2,
     imgsrc: "/img/book.jpg",
     author: "Jrr. Tolkien",

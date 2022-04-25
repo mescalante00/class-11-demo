@@ -23,10 +23,10 @@ export const Home = () => {
     <>
       <Grid container direction="column">
         <Grid item>
-          <Typography variant="h2">Meals</Typography>
+          <Typography variant="h2">Admin Page</Typography>
         </Grid>
         <Grid item>
-          <Button onClick={() => setShowAddMeal(true)}>Add Meal</Button>
+          <Button onClick={() => setShowAddMeal(true)}>Add Book</Button>
         </Grid>
         <Grid item>
           <BookTable />
