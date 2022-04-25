@@ -11,6 +11,7 @@ Book.init(
     id: { type: INTEGER, autoincrement: true, primaryKey: true },
     title: { type: STRING, allowNull: false },
     imgsrc: { type: STRING, allowNull: true },
+    author: { type: STRING, allowNull: false },
     description: { type: STRING, allowNull: false },
     publisher: { type: STRING, allowNull: false },
     price: { type: FLOAT, allowNull: false },

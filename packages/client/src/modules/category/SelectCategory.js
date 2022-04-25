@@ -21,6 +21,10 @@ export const SelectCategory = ({
 }) => {
   const { data, loading } = useQuery(GET_CATEGORIES);
 
+  // if (er) return <Typography>{er.message}</Typography>;
+  // if (loading) return <Typography>Loading...</Typography>;
+
+  console.log(data);
   return (
     <FormControl style={style}>
       <InputLabel id="category-label">Category</InputLabel>

@@ -7,10 +7,10 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { MealTable } from "../modules/meal/MealTable";
+import { BookTable } from "../modules/book/BookTable";
 import { useNavigate, useParams } from "react-router-dom";
-import { EditMeal } from "../modules/meal/EditMeal";
-import { AddMeal } from "../modules/meal/AddMeal";
+import { EditBook } from "../modules/book/EditBook";
+import { AddBook } from "../modules/book/AddBook";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -29,14 +29,14 @@ export const Home = () => {
           <Button onClick={() => setShowAddMeal(true)}>Add Meal</Button>
         </Grid>
         <Grid item>
-          <MealTable />
+          <BookTable />
         </Grid>
       </Grid>
       {showEditMeal && (
         <Dialog open={true} onClose={() => navigate("/")}>
           <DialogTitle />
           <DialogContent>
-            <EditMeal onClose={() => navigate("/")} />
+            <EditBook onClose={() => navigate("/")} />
           </DialogContent>
         </Dialog>
       )}
@@ -44,7 +44,7 @@ export const Home = () => {
         <Dialog open={true} onClose={() => setShowAddMeal(false)}>
           <DialogTitle />
           <DialogContent>
-            <AddMeal onClose={() => setShowAddMeal(false)} />
+            <AddBook onClose={() => setShowAddMeal(false)} />
           </DialogContent>
         </Dialog>
       )}

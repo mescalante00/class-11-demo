@@ -6,6 +6,7 @@ export const typeDefs = gql`
     title: String!
     imgsrc: String
     description: String!
+    author: String!
     publisher: String!
     price: Float!
     categoryId: ID

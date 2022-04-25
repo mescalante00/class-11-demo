@@ -9,11 +9,13 @@ const fieldStyle = { width: 500 };
 const validationSchema = yup.object({
   title: yup.string().required().label("Title"),
   description: yup.string().required().label("Description"),
+  publisher: yup.string().required().label("Publisher"),
+  author: yup.string().required().label("Author"),
   price: yup.number().required().label("Price").min(0.25),
   categoryId: yup.string().required().label("Category"),
 });
 
-export const MealForm = ({ id, initialValues, onClose }) => {
+export const BookForm = ({ id, initialValues, onClose }) => {
   const {
     values,
     errors,
@@ -25,7 +27,7 @@ export const MealForm = ({ id, initialValues, onClose }) => {
     initialValues,
     validationSchema,
     onSubmit: async (values) => {
-      console.log(`Meal ID: ${id}`);
+      console.log(`Book ID: ${id}`);
       console.log("Values:", values);
     },
   });
@@ -35,7 +37,7 @@ export const MealForm = ({ id, initialValues, onClose }) => {
       <Grid container spacing={2} direction="column">
         <Grid item>
           <Typography variant="h3">
-            {id !== undefined ? "Edit" : "Add"} Meal
+            {id !== undefined ? "Edit" : "Add"} Book
           </Typography>
         </Grid>
         <Grid item>
@@ -61,6 +63,28 @@ export const MealForm = ({ id, initialValues, onClose }) => {
             onBlur={handleBlur}
             error={!!errors.description}
             helperText={errors.description}
+          />
+        </Grid>
+        <Grid item>
+          <SelectCategory
+            name="publisher"
+            style={fieldStyle}
+            value={values.publisher}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={!!errors.publisher}
+            helperText={errors.publisher}
+          />
+        </Grid>
+        <Grid item>
+          <SelectCategory
+            name="author"
+            style={fieldStyle}
+            value={values.author}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={!!errors.author}
+            helperText={errors.author}
           />
         </Grid>
         <Grid item>
