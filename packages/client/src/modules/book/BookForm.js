@@ -1,8 +1,10 @@
 import { Button, Grid, TextField, Typography } from "@mui/material";
+import { useMutation } from "@apollo/client";
 import { useFormik } from "formik";
 import React from "react";
 import * as yup from "yup";
 import { SelectCategory } from "../category/SelectCategory";
+import { ADD_BOOK, UPDATE_BOOK } from "./mutations";
 
 const fieldStyle = { width: 500 };
 
@@ -16,6 +18,15 @@ const validationSchema = yup.object({
 });
 
 export const BookForm = ({ id, initialValues, onClose }) => {
+  const mutation = id !== undefined ? UPDATE_BOOK : ADD_BOOK;
+
+  const [saveBook, { loading, error }] = useMutation(mutation, {
+    refetchQueries: ["GET_BOOKS", "GET_BOOK"],
+    onCompleted: () => {
+      if (onClose !== undefined) onClose();
+    },
+  });
+
   const {
     values,
     errors,
@@ -29,6 +40,16 @@ export const BookForm = ({ id, initialValues, onClose }) => {
     onSubmit: async (values) => {
       console.log(`Book ID: ${id}`);
       console.log("Values:", values);
+
+      const { title, description, author, imgsrc, categoryId, price } = values;
+      const input = { title, description, author, imgsrc, categoryId, price };
+
+      await saveBook({
+        variables: {
+          id,
+          input,
+        },
+      });
     },
   });
 
