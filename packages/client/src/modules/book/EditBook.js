@@ -7,10 +7,10 @@ import { GET_BOOK } from "./queries";
 
 export const EditBook = ({ onClose }) => {
   const params = useParams();
-
+  console.log(params.id);
   const { data, loading, error } = useQuery(GET_BOOK, {
     variables: {
-      id: params.id,
+      bookId: params.id,
     },
   });
 
