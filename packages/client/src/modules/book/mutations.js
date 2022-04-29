@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 export const ADD_BOOK = gql`
-  mutation AddBook($input: BookInput!) {
+  mutation ADD_BOOK($input: BookInput!) {
     addBook(input: $input) {
       ok
       errors {

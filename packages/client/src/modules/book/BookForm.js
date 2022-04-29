@@ -42,8 +42,9 @@ export const BookForm = ({ id, initialValues, onClose }) => {
       console.log("Values:", values);
 
       const { title, description, author, imgsrc, categoryId, price } = values;
+      console.log(values);
       const input = { title, description, author, imgsrc, categoryId, price };
-
+      console.log(input);
       await saveBook({
         variables: {
           id,
@@ -144,13 +145,23 @@ export const BookForm = ({ id, initialValues, onClose }) => {
             helperText={errors.categoryId}
           />
         </Grid>
-
+        {/* Adding the lectures version of error handling */}
+        {error && (
+          <Grid item>
+            <Typography> Error: {error.message}</Typography>
+          </Grid>
+        )}
+        {/* end of lectures version of error handling */}
         <Grid item container spacing={2}>
           <Grid item>
-            <Button type="reset">Reset</Button>
+            <Button type="reset" disabled={loading}>
+              Reset
+            </Button>
           </Grid>
           <Grid item>
-            <Button type="submit">Save</Button>
+            <Button type="submit" disabled={loading}>
+              Save
+            </Button>
           </Grid>
         </Grid>
       </Grid>

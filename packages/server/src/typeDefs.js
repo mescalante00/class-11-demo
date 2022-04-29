@@ -7,7 +7,7 @@ export const typeDefs = gql`
     imgsrc: String
     description: String!
     author: String!
-    publisher: String!
+    publisher: String
     price: Float!
     categoryId: ID
     category: Category
@@ -21,5 +21,28 @@ export const typeDefs = gql`
     books: [Book]
     book(id: ID!): Book
     categories: [Category]
+  }
+  # Adding back necesary code
+  type Error {
+    message: String!
+  }
+
+  type Result {
+    ok: Boolean!
+    errors: [Error]
+  }
+
+  input BookInput {
+    title: String!
+    description: String!
+    author: String!
+    imgsrc: String
+    categoryId: Float!
+    price: Float!
+  }
+
+  type Mutation {
+    addBook(input: BookInput!): Result
+    updateBook(id: ID!, input: BookInput): Result
   }
 `;

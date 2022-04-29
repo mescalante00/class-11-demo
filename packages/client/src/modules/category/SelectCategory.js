@@ -24,7 +24,6 @@ export const SelectCategory = ({
   if (error) return <Typography>{error.message}</Typography>;
   if (loading) return <Typography>Loading...</Typography>;
 
-  console.log(data);
   return (
     <FormControl style={style}>
       <InputLabel id="category-label">Category</InputLabel>

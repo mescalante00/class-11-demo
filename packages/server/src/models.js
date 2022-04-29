@@ -13,7 +13,7 @@ Book.init(
     imgsrc: { type: STRING, allowNull: true },
     author: { type: STRING, allowNull: false },
     description: { type: STRING, allowNull: false },
-    publisher: { type: STRING, allowNull: false },
+    publisher: { type: STRING, allowNull: true },
     price: { type: FLOAT, allowNull: false },
   },
   {

@@ -15,9 +15,9 @@ import { AddBook } from "../modules/book/AddBook";
 export const Home = () => {
   const navigate = useNavigate();
   const params = useParams();
-  const [showAddMeal, setShowAddMeal] = useState(false);
+  const [showAddBook, setShowAddBook] = useState(false);
 
-  const showEditMeal = params.id !== undefined;
+  const showEditBook = params.id !== undefined;
 
   return (
     <>
@@ -26,13 +26,13 @@ export const Home = () => {
           <Typography variant="h2">Admin Page</Typography>
         </Grid>
         <Grid item>
-          <Button onClick={() => setShowAddMeal(true)}>Add Book</Button>
+          <Button onClick={() => setShowAddBook(true)}>Add Book</Button>
         </Grid>
         <Grid item>
           <BookTable />
         </Grid>
       </Grid>
-      {showEditMeal && (
+      {showEditBook && (
         <Dialog open={true} onClose={() => navigate("/")}>
           <DialogTitle />
           <DialogContent>
@@ -40,11 +40,11 @@ export const Home = () => {
           </DialogContent>
         </Dialog>
       )}
-      {showAddMeal && (
-        <Dialog open={true} onClose={() => setShowAddMeal(false)}>
+      {showAddBook && (
+        <Dialog open={true} onClose={() => setShowAddBook(false)}>
           <DialogTitle />
           <DialogContent>
-            <AddBook onClose={() => setShowAddMeal(false)} />
+            <AddBook onClose={() => setShowAddBook(false)} />
           </DialogContent>
         </Dialog>
       )}

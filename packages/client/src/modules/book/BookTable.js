@@ -1,6 +1,5 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
-//import { GET_MEALS } from "./queries";
 import { Icon, Typography } from "@mui/material";
 // import { error } from "../../components/ErrorMessage";
 // import { loading } from "../../components/Loading";
