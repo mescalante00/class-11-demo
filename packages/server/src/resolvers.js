@@ -1,4 +1,5 @@
 import { Book, Category } from "./models.js";
+import { books } from "../data/books.js";
 
 export const resolvers = {
   Query: {

@@ -36,9 +36,10 @@ export const typeDefs = gql`
     title: String!
     description: String!
     author: String!
+    publisher: String
     imgsrc: String
-    categoryId: Float!
     price: Float!
+    categoryId: ID
   }
 
   type Mutation {

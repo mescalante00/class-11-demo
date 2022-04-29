@@ -19,14 +19,14 @@ const validationSchema = yup.object({
 
 export const BookForm = ({ id, initialValues, onClose }) => {
   const mutation = id !== undefined ? UPDATE_BOOK : ADD_BOOK;
-
+  console.log("Book from mutation checking");
   const [saveBook, { loading, error }] = useMutation(mutation, {
     refetchQueries: ["GET_BOOKS", "GET_BOOK"],
     onCompleted: () => {
       if (onClose !== undefined) onClose();
     },
   });
-
+  console.log("Before value checking");
   const {
     values,
     errors,
@@ -41,9 +41,25 @@ export const BookForm = ({ id, initialValues, onClose }) => {
       console.log(`Book ID: ${id}`);
       console.log("Values:", values);
 
-      const { title, description, author, imgsrc, categoryId, price } = values;
+      const {
+        title,
+        description,
+        author,
+        publisher,
+        imgsrc,
+        categoryId,
+        price,
+      } = values;
       console.log(values);
-      const input = { title, description, author, imgsrc, categoryId, price };
+      const input = {
+        title,
+        description,
+        author,
+        publisher,
+        imgsrc,
+        categoryId,
+        price,
+      };
       console.log(input);
       await saveBook({
         variables: {
@@ -88,7 +104,7 @@ export const BookForm = ({ id, initialValues, onClose }) => {
           />
         </Grid>
         <Grid item>
-          <SelectCategory
+          <TextField
             name="publisher"
             style={fieldStyle}
             value={values.publisher}
@@ -99,7 +115,7 @@ export const BookForm = ({ id, initialValues, onClose }) => {
           />
         </Grid>
         <Grid item>
-          <SelectCategory
+          <TextField
             name="author"
             style={fieldStyle}
             value={values.author}
