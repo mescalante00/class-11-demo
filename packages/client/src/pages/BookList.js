@@ -8,6 +8,7 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const BookList = ({ books }) => {
   console.log(books);
@@ -28,7 +29,7 @@ export const BookList = ({ books }) => {
               <Typography>${book.price}</Typography>
             </CardContent>
             <CardActions>
-              <Button>More Detail</Button>
+              <Link to={`/book/${book.id}`}>More Details</Link>
             </CardActions>
           </Card>
         </Grid>

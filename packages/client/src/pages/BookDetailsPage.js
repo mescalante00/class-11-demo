@@ -4,7 +4,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { GET_BOOK_DETAILS } from "./queries";
 
-export default function BookDetailsPage() {
+export const BookDetailsPage = () => {
   const id = useParams();
   console.log(id);
   const { data, loading, error } = useQuery(GET_BOOK_DETAILS, {
@@ -42,4 +42,4 @@ export default function BookDetailsPage() {
       </Grid>
     </>
   );
-}
+};

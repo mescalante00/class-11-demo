@@ -2,18 +2,19 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Book } from "./pages/Book";
-import Navigation from "./components/Navigation";
-import BookDetailsPage from "./pages/BookDetailsPage";
-import { Home } from "./pages/Home";
+import { BookDetailsPage } from "./pages/BookDetailsPage";
+import { Admin } from "./pages/Admin.js";
+import {Home} from "./pages/Home";
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route index element={<Layout />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="book" element={<Book />} />
-          <Route path="books/:id" element={<Home />} />
+          <Route path="book/:id" element={<BookDetailsPage />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>
